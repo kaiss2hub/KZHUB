@@ -237,7 +237,7 @@ end)
 local SpoofTab = Window:CreateTab("Custom", 4483362458) -- Title, Image
 local SpoofSection = SpoofTab:CreateSection("Custom")
 
-local Button = CustomTab:CreateButton({
+local Button = SpoofTab:CreateButton({
    Name = "Hide Name",
    Callback = function()
        for _, player in pairs(game.Players:GetPlayers()) do
@@ -256,7 +256,7 @@ end
   end
     })
 
-local Button = CustomTab:CreateButton({
+local Button = SpoofTab:CreateButton({
    Name = "Hide Level",
    Callback = function()
        for _, player in pairs(game.Players:GetPlayers()) do
