@@ -1,4 +1,4 @@
-
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
    Name = "KZHUB TESTING",
    Icon = 0,
    LoadingTitle = "Hold on..",
