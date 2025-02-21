@@ -185,3 +185,51 @@ MainTab:CreateButton({
     
         end
 })
+
+local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
+local PlayerSection = PlayerTab:CreateSection("Simple Hacks")
+
+local Slider = PlayerTab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {0, 300},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+
+local Slider = PlayerTab:CreateSlider({
+   Name = "JumpHeight",
+   Range = {0, 300},
+   Increment = 1,
+   Suffix = "Height",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+   end,
+})
+
+local PlayerSection = PlayerTab:CreateSection("Button Hacks")
+
+local Button = PlayerTab:CreateButton({
+   Name = "Fly",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+   end
+})
+
+local Button = PlayerTab:CreateButton({
+   Name = "Infinite Jump",
+   Callback = function()
+ local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+if InfiniteJumpEnabled then
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end
+end)
+   end,
+})
