@@ -233,8 +233,8 @@ end
 end)
    end,
 })
-local SpoofTab = Window:CreateTab("Spoof", 4483362458) -- Title, Image
-local SpoofSection = SpoofTab:CreateSection("Spoofer")
+local CustomTab = Window:CreateTab("Name/Level", 4483362458) -- Title, Image
+local CustomSection = SpoofTab:CreateSection("Cutsom")
 
 local Button = SpoofTab:CreateButton({
    Name = "Hide Name",
@@ -265,7 +265,7 @@ local Button = SpoofTab:CreateButton({
         if nameGui and nameGui:FindFirstChild("Main") then
             local levelLabel = nameGui.Main:FindFirstChild("Level")
             if levelLabel then
-                levelLabel.Text = "lvl 100000000000000000000"  -- This is the level changer :p
+                levelLabel.Text = "lvl 69"  -- This is the level changer :p
                 levelLabel.TextColor3 = Color3.fromRGB(255, 0, 0)  -- Makes the text red
             end
         end
