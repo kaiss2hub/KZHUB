@@ -1,11 +1,11 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "KZHUB | TEST",
+   Name = "KZHUB | PAID",
    Icon = 0,
    LoadingTitle = "Hold on..",
    LoadingSubtitle = "Made By Daddy",
-   Theme = "Ocean", 
+   Theme = "Green", 
 
    DisableRayfieldPrompts = true,
    DisableBuildWarnings = true, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
