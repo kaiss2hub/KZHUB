@@ -5,7 +5,7 @@ local Window = Rayfield:CreateWindow({
    Icon = 0,
    LoadingTitle = "Hold on..",
    LoadingSubtitle = "Made By Daddy",
-   Theme = "Green", 
+   Theme = "AmberGlow", 
 
    DisableRayfieldPrompts = true,
    DisableBuildWarnings = true, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
